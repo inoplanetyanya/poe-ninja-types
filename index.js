@@ -66,9 +66,10 @@ function extractTypes(code) {
       return {
         name,
         pages: pages.map((page) => {
-          const { icon, title, type, url } = page;
+          const { icon, title, type, url, availableViews } = page;
 
           return {
+            availableViews,
             icon,
             title,
             type,
